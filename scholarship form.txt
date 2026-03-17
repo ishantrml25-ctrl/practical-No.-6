@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scholarship / Seminar Registration Form</title>
+</head>
+<body>
+
+<h2>Scholarship / Seminar Registration Form</h2>
+
+<form>
+
+    <!-- Personal Details -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br><br>
+
+    </fieldset>
+
+    <!-- Academic Details -->
+    <fieldset>
+        <legend>Academic Information</legend>
+
+        <label>Course:</label><br>
+        <select name="course">
+            <option value="">--Select Course--</option>
+            <option value="btech">B.Tech</option>
+            <option value="bsc">B.Sc</option>
+            <option value="msc">M.Sc</option>
+            <option value="mba">MBA</option>
+        </select><br><br>
+
+        <label>Year of Study:</label><br>
+        <select name="year">
+            <option value="">--Select Year--</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select><br><br>
+
+    </fieldset>
+
+    <!-- Seminar / Scholarship Selection -->
+    <fieldset>
+        <legend>Program Details</legend>
+
+        <label>Apply For:</label><br>
+        <input type="radio" name="program" value="scholarship"> Scholarship
+        <input type="radio" name="program" value="seminar"> Seminar<br><br>
+
+        <label>Select Seminar Topics:</label><br>
+        <input type="checkbox" name="topics" value="ai"> Artificial Intelligence<br>
+        <input type="checkbox" name="topics" value="web"> Web Development<br>
+        <input type="checkbox" name="topics" value="data"> Data Science<br>
+        <input type="checkbox" name="topics" value="cyber"> Cyber Security<br><br>
+
+        <label>Preferred Mode:</label><br>
+        <input type="radio" name="mode" value="online"> Online
+        <input type="radio" name="mode" value="offline"> Offline<br><br>
+
+    </fieldset>
+
+    <!-- Declaration -->
+    <fieldset>
+        <legend>Declaration</legend>
+
+        <input type="checkbox" name="agree" required>
+        I confirm that the above information is correct.<br><br>
+
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
